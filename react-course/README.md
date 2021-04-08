@@ -21,12 +21,6 @@ This project is a "Github Battle" app. You'll be able to see the most popular re
 
 You can view the final project at __[github-battle.ui.dev](http://github-battle.ui.dev/)__
 
-### Branches
-
-Every (Project) video in the course coincides with a branch. If you want to compare your code with Tyler's or you just want to play around with the code, check out the different branches.
-
-<img align='center' src='https://user-images.githubusercontent.com/2933430/53434937-df9cc300-39b4-11e9-8e8f-5bdd212cac2d.png' width='200' />
-
 ### Project Preview
 
 Light Mode          |  Dark Mode
