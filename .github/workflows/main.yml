@@ -26,9 +26,6 @@ jobs:
     - name: Build project
       run: npm run build
       
-    - name: Test tree
-      run: ls .
-
     - name: Upload production-ready build files
       uses: actions/upload-artifact@v2
       with:
@@ -42,8 +39,6 @@ jobs:
     if: github.ref == 'refs/heads/master'
     
     steps:
-    - name: Check tree
-      run: ls -la github-action
     - name: Download artifact
       uses: actions/download-artifact@v2
       with:
