@@ -1,3 +1,5 @@
+name: Dummy
+
 on: 
   workflow_dispatch:
     inputs:
@@ -15,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "GITHUB_OWNER=$(echo $GITHUB_OWNER)"
+          echo $GITHUB_OWNER
           echo "Log level: $LEVEL"
         env:
           GITHUB_OWNER: dummy-user
