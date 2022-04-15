@@ -20,5 +20,5 @@ jobs:
           echo "GITHUB_OWNER=$(echo $GITHUB_OWNER)"
           echo "Log level: $LEVEL"
         env:
-          GITHUB_OWNER: dummy-user
+          GITHUB_OWNER: secrets.GITHUB_OWNER
           LEVEL: ${{ github.event.inputs.logLevel }}
