@@ -18,7 +18,9 @@ jobs:
     steps:
       - run: |
           echo "GITHUB_OWNER=$(echo $GITHUB_OWNER)"
+          echo "GITHUB_TOKEN=$(echo $GITHUB_TOKEN)"
           echo "Log level: $LEVEL"
         env:
           GITHUB_OWNER: ${{ secrets.GITHUB_ACTOR }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LEVEL: ${{ github.event.inputs.logLevel }}
