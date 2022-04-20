@@ -20,7 +20,7 @@ jobs:
           echo "GITHUB_OWNER=$(echo $GITHUB_OWNER)"
           echo "GITHUB_TOKEN=$(echo $GITHUB_TOKEN)"
           echo "Log level: $LEVEL"
-          curl -X GET-H "Accept: application/vnd.github.v3+json" -u $GITHUB_OWNER:$GITHUB_TOKEN https://api.github.com/repos/$GITHUB_OWNER/github-battle/actions/secrets/public-key
+          curl -X GET -H "Accept: application/vnd.github.v3+json" -u $GITHUB_OWNER:$GITHUB_TOKEN https://api.github.com/repos/$GITHUB_OWNER/github-battle/actions/secrets/public-key
         env:
           GITHUB_OWNER: iamatulsingh
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
