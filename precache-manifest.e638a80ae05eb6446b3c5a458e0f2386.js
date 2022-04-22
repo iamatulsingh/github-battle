@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8b17c02e0313efac8ad041825e4e5b38",
+    "revision": "b495c7e3ca27c86ee73db038094634a8",
     "url": "/github-battle/index.html"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/github-battle/static/js/3.86cf6540.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2b63db1b120c814dabc9",
-    "url": "/github-battle/static/js/4.a494cc7e.chunk.js"
+    "revision": "2c010898cd84e69b1cea",
+    "url": "/github-battle/static/js/4.993ec12c.chunk.js"
   },
   {
     "revision": "1b48f3f60346481f6420",
@@ -36,7 +36,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/github-battle/static/js/main.5070fbd6.chunk.js"
   },
   {
-    "revision": "45a6fde457e04733655b",
-    "url": "/github-battle/static/js/runtime-main.73c0bbd9.js"
+    "revision": "f3f2cdd8ad8e16b74dcc",
+    "url": "/github-battle/static/js/runtime-main.793fe535.js"
   }
 ]);
