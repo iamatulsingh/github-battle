@@ -14,7 +14,7 @@ export default function Nav () {
           <ul className='row nav'>
             <li>
               <NavLink
-                to='/'
+                to='/github-battle'
                 exact
                 activeStyle={activeStyle}
                 className='nav-link'>
@@ -23,7 +23,7 @@ export default function Nav () {
             </li>
             <li>
               <NavLink
-                to='/battle'
+                to='/github-battle/battle'
                 activeStyle={activeStyle}
                 className='nav-link'>
                   Battle
@@ -31,11 +31,14 @@ export default function Nav () {
             </li>
           </ul>
           <button
-            style={{fontSize: 30}}
+            style={{
+              fontSize: 30,
+              cursor: 'pointer'
+            }}
             className='btn-clear'
             onClick={toggleTheme}
           >
-            {theme === 'light' ? '🔦' : '💡'}
+            {theme === 'light' ? '🌙' : '🌕'}
           </button>
         </nav>
       )}
