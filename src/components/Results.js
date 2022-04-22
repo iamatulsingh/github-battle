@@ -70,7 +70,7 @@ export default class Results extends React.Component {
           </Card>
         </div>
         <Link
-          to='/battle'
+          to='/github-battle/battle'
           className='btn dark-btn btn-space'>
             Reset
         </Link>
