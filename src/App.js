@@ -33,9 +33,9 @@ export default class App extends React.Component {
 
               <React.Suspense fallback={<Loading />}>
                 <Switch>
-                  <Route exact path='/' component={Popular} />
-                  <Route exact path='/battle' component={Battle} />
-                  <Route path='/battle/results' component={Results} />
+                  <Route exact path='/github-battle' component={Popular} />
+                  <Route exact path='/github-battle/battle' component={Battle} />
+                  <Route path='/github-battle/battle/results' component={Results} />
                   <Route render={() => <h1>404</h1>} />
                 </Switch>
               </React.Suspense>
