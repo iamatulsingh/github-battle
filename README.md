@@ -1,4 +1,4 @@
-<h3 align="center">React Course Project - <a href="https://tm.dev/react-course-project/">Github Battle App</a></h3>
+<h3 align="center">React Course Project - <a href="https://iamatulsingh.github.io/github-battle/" /> Battle App</a></h3>
 
 ### Info
 
