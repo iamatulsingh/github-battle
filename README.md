@@ -1,19 +1,32 @@
-<h3 align="center">React Course Project - <a href="https://iamatulsingh.github.io/github-battle/" /> Battle App</a></h3>
+# React + TypeScript + Vite
 
-### Info
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-This is the repository for TylerMcGinnis.com's "React" course project. 
+Currently, two official plugins are available:
 
-For more information on the course, visit __[tm.dev/courses/react](https://tm.dev/courses/react/)__.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-### Project
+## React Compiler
 
-This project is a "Github Battle" app. You'll be able to see the most popular repos for a variety of languages as well as battle two Github users to see who has the better profile.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-You can view the final project at __[tm.dev/react-course-project](https://tm.dev/react-course-project/)__
+## Expanding the Oxlint configuration
 
-### Project Preview
+If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
 
-Light Mode          |  Dark Mode
-:-------------------------:|:-------------------------:
-![](https://user-images.githubusercontent.com/2933430/53439193-c39e1f00-39be-11e9-848f-d327f0ef5f53.png) ![](https://user-images.githubusercontent.com/2933430/53439196-c39e1f00-39be-11e9-875e-6f4aea52f099.png) ![](https://user-images.githubusercontent.com/2933430/53439197-c39e1f00-39be-11e9-8d17-d303692e5dd2.png) |  ![](https://user-images.githubusercontent.com/2933430/53439194-c39e1f00-39be-11e9-8302-dcea6dae726a.png) ![](https://user-images.githubusercontent.com/2933430/53439195-c39e1f00-39be-11e9-9d10-488311266460.png) ![](https://user-images.githubusercontent.com/2933430/53439198-c39e1f00-39be-11e9-8bb8-d12687113a2e.png)
+```json
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "typescript", "oxc"],
+  "options": {
+    "typeAware": true
+  },
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/only-export-components": ["warn", { "allowConstantExport": true }]
+  }
+}
+```
+
+See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
